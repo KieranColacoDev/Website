@@ -9,18 +9,7 @@ html{
     font-size:10px;
     font-family: 'Montserrat', sans-serif;
     background-color: #ffffff;
-background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
-   
-
-    
-/*background: rgb(69,142,249);
-background: linear-gradient(90deg, rgba(69,142,249,1) 0%, rgba(141,113,244,1) 39%, rgba(69,142,249,1) 100%);
-background: #2193b0; 
-background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  
-background: linear-gradient(to right, #6dd5ed, #2193b0); 
-*/
-
-
+    background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
 }
 a{
     text-decoration: none;
@@ -148,7 +137,7 @@ p{
 }
 
 #header .nav-list ul li:hover a{
-    color: #0048BA;
+    color: #5DADEC;
 }
 
 #header .hamburger{
@@ -242,6 +231,7 @@ p{
     color:transparent;
     animation: text_reveal .5s ease forwards;
     animation-delay: 1ss;
+    
 }
 
 
@@ -264,6 +254,7 @@ p{
     background-color: #0048BA; 
     animation: text_reveal_box 1s ease;
     animation-delay: .3s;
+ 
 }
 
 #hero h1:nth-child(1) span{
@@ -292,6 +283,7 @@ p{
 #services .service-top{
     width: 500px;
     margin: 0 auto;
+    margin-top: 10px;
 }
 
 
@@ -301,7 +293,7 @@ p{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 #services .service-item{
@@ -364,7 +356,7 @@ p{
 }
 
 #projects .projects-top h1{
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 #projects .projects-bottom{
@@ -393,7 +385,7 @@ p{
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    background: #0048BA;
+    background: #0A7E8C;
     color: white;
 }
 
@@ -409,12 +401,17 @@ p{
 }
 
 #projects .project-info p{
+    margin-top: 15px;
     color:white;
 }
 
-#projects .projects-img{
+#projects .project-info p a:visited, a:hover, a:focus{
+    text-decoration: none;
+    color: white;
+}
+#projects .project-image{
     flex-basis: 50%;
-    height: 300px;
+    height: 400px;
     overflow: hidden;
 }
 
@@ -439,6 +436,7 @@ p{
 
 #about .col-right{
     width:100%;
+    margin-top: -30px;
 
 }
 
@@ -483,7 +481,7 @@ p{
     display: flex;
     flex-direction: row;
     width: 700px;
-   margin-top: 40px;
+   margin-top: 20px;
 }
 
 #contact .contact-item{
@@ -606,6 +604,59 @@ p{
 }
 /*End of Keyframes*/
 
+/*Media Query for Mobile*/
+
+@media only screen and (min-width: 480px){
+
+    /*Contact*/
+
+    #contact .contact-items{
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+       margin-top: 20px;
+    }
+
+    /*End of Contact*/
+    
+    
+    /*Nav*/
+
+    #header .nav-list ul{
+        list-style: none;
+        position: absolute;
+        background-color: rgb(31,30,30);
+        width: 100vw;
+        height: 100vh;
+        right: 100%;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        overflow-x: hidden;
+        transition: .5s ease right;
+    }
+
+    #header .nav-list ul.active{
+        right: 0%;
+    }
+
+    /*End of Nav*/
+
+    #hero h1{
+        margin-top:100px;
+    }
+    
+}
+
+
+/*End of Query for Mobile*/
+
+
+
 /*Media Query For Tablet*/
 
 @media only screen and (min-width:768px){
@@ -658,6 +709,31 @@ p{
 
     /*End of About Me*/
 
+    /*Nav*/
+
+    #header .nav-list ul{
+        list-style: none;
+        position: absolute;
+        background-color: rgb(31,30,30);
+        width: 100vw;
+        height: 100vh;
+        right: 100%;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        overflow-x: hidden;
+        transition: .5s ease right;
+    }
+
+    #header .nav-list ul.active{
+        right: 0%;
+    }
+
+    /*End of Nav*/
+
    
 }
 
@@ -671,6 +747,41 @@ p{
         flex-basis: 22%;
         margin: 1.5%;
     }
+
+    #header .nav-list ul{
+        list-style: none;
+        position: absolute;
+        background-color: rgb(31,30,30);
+        width: 100vw;
+        height: 100vh;
+        right: 100%;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        z-index: 1;
+        overflow-x: hidden;
+        transition: .5s ease right;
+    }
+
+    #header .nav-list ul.active{
+        right: 90%;
+    }
+
+    #contact .contact-items{
+        width: 350px;
+        display: flex;
+        flex-direction: row;
+        width: 700px;
+       margin-top: 20px;
+    }
+
+    #hero h1{
+        margin-top: 0px;
+    }
+
+    
 
 }
 
