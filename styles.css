@@ -378,6 +378,7 @@ p{
     height:80px;
     width:80px;
     margin-bottom:20px;
+    margin-left: -10px;
 }
 
 #services .service-item h2{
@@ -454,8 +455,13 @@ p{
     color:white;
 }
 
-#projects .project-info p a:visited, a:hover, a:focus{
+#projects .project-info p a:visited, a:focus{
     text-decoration: none;
+    color: white;
+}
+
+#projects .project-info p a:hover{
+    text-decoration: underline;
     color: white;
 }
 #projects .project-image{
