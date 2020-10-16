@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <title>Website</title>
+    <title>KieranColaco</title>
 </head>
 <body>
 
@@ -18,8 +18,10 @@
                 <a href="#hero"><img src="./img/kieranlogo.png"></a>
             </div>
             <div class="nav-list">
-                <div class="hamburger"><div class="bar"></div></div>
-                <ul>
+                <div class="hamburger">
+                    <div class="bar"></div>
+                </div>
+                <ul id="nav-id">
                     <li><a href="#hero" data-after="Home">Home</a></li>
                     <li><a href="#about" data-after="About">About</a></li>
                     <li><a href="#services" data-after="Skills">Skills</a></li>
@@ -36,10 +38,19 @@
 <!--Hero Section-->
 <section id="hero">
     <div class="hero container">
-        <div>
+        <div class="hero-left">
             <h1>Welcome<span></span></h1>
-            <h1>To My Portfolio<span></span></h1>
+            <h1>To My<span></span></h1>
             <h1>Website<span></span></h1>
+            <a href="#about" type="button" class="cta">About Me</a>
+            
+        </div>
+        <div class="hero-right">
+            
+            <div class="hero-img">
+                <img src="./img/kieranpicture.jpg">
+            </div>
+            
         </div>
     </div>
 </section>
