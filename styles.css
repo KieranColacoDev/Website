@@ -328,12 +328,13 @@ p{
     max-width: 1500px;
     margin: 0 auto;
     padding: 100px 0;
+    margin-top: -100px;
 }
 
 #services .service-top{
     width: 500px;
     margin: 0 auto;
-    margin-top: 10px;
+    
 }
 
 
@@ -403,12 +404,15 @@ p{
     max-width: 1200px;
     margin: 0 auto;
     padding: 100px 0;
+    margin-top: -20px;
     
 }
 
 #projects .projects-top h1{
     margin-bottom: 20px;
 }
+
+
 
 #projects .projects-bottom{
     display:flex;
@@ -530,6 +534,7 @@ p{
     flex-direction: column;
     max-width: 1200px;
     margin: 0 auto;
+    margin-top: -100px;
 }
 
 #contact .contact-items{
@@ -742,6 +747,17 @@ p{
         text-align: left;
     }
 
+    #projects .projects{
+        
+        margin-top: -75px;
+        
+    }
+
+    #contact .contact{
+        
+        margin-top: -10px;
+    }
+
     
 
     
@@ -904,6 +920,17 @@ p{
 
     #services .section-title{
         margin-left: 0px;
+    }
+
+    #projects .projects{
+        
+        margin-top: -20px;
+        
+    }
+
+    #contact .contact{
+        
+        margin-top: -100px;
     }
 
     
