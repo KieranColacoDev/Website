@@ -19,7 +19,8 @@ a{
     width:100%;
     display:flex;
     align-items:center;
-    justify-content:center;    
+    justify-content:center; 
+    overflow: hidden;   
 }
 
 #hero .container{
@@ -27,7 +28,8 @@ a{
     width:100%;
     display:flex;
     align-items:center;
-    justify-content:center;    
+    justify-content:center;
+    overflow: hidden;    
 }
 
 
@@ -730,7 +732,7 @@ p{
     }
 
     #services .section-title{
-        margin-right: 90px;
+        margin-right: 70px;
     }
 
     #about .col-left{
@@ -760,7 +762,18 @@ p{
 
     
 
+    .container{
+      
+        overflow: hidden;
+        width:100% 
+    }
     
+    #hero .container{
+       
+        overflow: hidden;
+        width: 100%;
+          
+    }
 
     
 }
@@ -931,6 +944,18 @@ p{
     #contact .contact{
         
         margin-top: -100px;
+    }
+
+    .container{
+      
+        overflow: hidden;
+         
+    }
+    
+    #hero .container{
+       
+        overflow: hidden;
+           
     }
 
     
