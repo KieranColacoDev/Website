@@ -357,7 +357,7 @@ p{
     flex-direction: column;
     padding: 30px;
     border-radius: 10px;
-    background-image: url(./img/webdesignbackground.jpg);
+    background-image: url(./img/skill-card-background.jpg);
     background-size:cover;
     margin: 10px 5%;
     position: relative;
@@ -379,6 +379,7 @@ p{
 }
 
 #services .service-bottom .icon{
+    
     height:80px;
     width:80px;
     margin-bottom:20px;
@@ -398,84 +399,6 @@ p{
 }
 
 /*End of Skill Section*/
-
-/*Project Section*/
-
-#projects .services{
-    flex-direction: column;
-    text-align: center;
-    max-width: 1500px;
-    margin: 0 auto;
-    padding: 100px 0;
-    margin-top: -100px;
-}
-
-#projects .service-top{
-    width: 500px;
-    margin: 0 auto;
-    
-}
-
-
-
-#projects .service-bottom{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 20px;
-}
-
-#projects .service-item{
-    flex-basis: 80%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-    padding: 30px;
-    border-radius: 10px;
-    background-image: url(./img/webdesignbackground.jpg);
-    background-size:cover;
-    margin: 10px 5%;
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-    
-}
-
-#projects .service-item::after{
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background-image: linear-gradient(60deg,#29323c 0%,#485563 100%);
-    opacity: .8;
-    z-index:-1;
-}
-
-#projects .service-bottom .icon{
-    height:80px;
-    width:80px;
-    margin-bottom:20px;
-    margin-left: -10px;
-}
-
-#projects .service-item h2{
-    font-size: 2rem;
-    color: white;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-}
-
-#projects .service-item p{
-    color: white;
-    text-align: left;
-}
-
-/*End of Project Section*/
-
 
 
 /*About Me Section*/
