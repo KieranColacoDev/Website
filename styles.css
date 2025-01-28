@@ -557,7 +557,11 @@ p{
 
 /*End of Footer Section*/
 
-
+a:link,
+a:visited {
+    color: white;
+    text-decoration: none; /* Optional: Removes underline if not desired */
+}
 
 /*Keyframes*/
 
